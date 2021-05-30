@@ -9,7 +9,7 @@ function index() {
       <Logo />
       <ul className={styles.nav_left__list}>
         <li>
-          <Link to="/home" className={styles.nav_left__list__link}>
+          <Link to="/" className={styles.nav_left__list__link}>
             Home
           </Link>
         </li>

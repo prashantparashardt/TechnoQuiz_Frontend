@@ -1,5 +1,5 @@
 @import '../../assets/styles/mixins.scss';
-
+@import '../../assets/styles/variables.scss';
 .nav_left {
   @include set-flex;
   &__list {
@@ -12,6 +12,7 @@
     }
     &__link {
       text-decoration: none;
+      color: $text-color;
     }
   }
 }

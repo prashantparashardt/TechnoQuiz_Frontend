@@ -1,10 +1,10 @@
 @import '../styles/variables.scss';
 @mixin set-btn-style() {
   font-weight: 400;
-  color: $primary-color;
-  background-color: $btn-color;
-  border: none;
-  border-radius: 2px;
+  color: $text-color;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid white;
+  border-radius: 20px;
   font-size: 0.8rem;
   padding: 0.5rem;
   &:hover {

@@ -1,6 +1,6 @@
-import './App.css';
 import React from 'react';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
+import styles from './App.module.scss';
 import Header from './Header';
 import Home from './Home';
 import SignIn from './SignIn';
@@ -10,9 +10,9 @@ import Category from './Category';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className={styles.app}>
         <Header />
-        <main className="main">
+        <main className={styles.main}>
           <Switch>
             <Route path="/" component={Home} exact />
             {/* <Route
