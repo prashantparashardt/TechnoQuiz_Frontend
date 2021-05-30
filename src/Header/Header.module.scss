@@ -1,0 +1,6 @@
+@import '../assets/styles/mixins.scss';
+.header {
+  @include set-flex;
+  padding: 0 1rem;
+  background-color: black;
+}
