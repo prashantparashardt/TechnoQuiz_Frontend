@@ -14,17 +14,8 @@ function App() {
         <Header />
         <main className={styles.main}>
           <Switch>
-            <Route path="/" component={Home} exact />
-            {/* <Route
-            path="/products"
-            render={() => (
-              <ProductsPage addProduct={addProductHandler} exact />
-            )}
-          />
-          <Route path="/products/:id" component={ProductsPage} />
-          <Route path="/Signin" component={Signin} exact />
-          <Route path="/register" component={Register} exact /> */}
-            <Route path="/categories" component={Category} />
+            <Route path="/" component={Home} />
+            <Route path="/categories" component={Category} exact />
             <Route path="/Signin" component={SignIn} exact />
             <Route path="/signup" component={SignUp} exact />
           </Switch>
