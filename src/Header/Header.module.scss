@@ -1,0 +1,24 @@
+@import '../assets/styles/mixins.scss';
+
+// .header {
+//   @include set-flex;
+//   padding: 0 1rem;
+//   background-color: black;
+//   height: 16vh;
+//   z-index: 200;
+//   position: relative;
+// }
+.header {
+  @include set-max-width;
+  @include set-flex;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease-out, background-color 0.3s ease-out;
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 56px;
+  height: 16vh;
+}

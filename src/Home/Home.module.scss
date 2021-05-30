@@ -1,0 +1,65 @@
+@import '../assets/styles/mixins.scss';
+@import '../assets/styles/variables.scss';
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-color: $primary-color;
+  &__container {
+    width: 100%;
+    height: 100%;
+    padding: 5% 0 5% 0;
+    @include set-flex;
+    flex-direction: column;
+    justify-content: center;
+    &__left {
+      width: 90%;
+      z-index: 100;
+      color: #eaeaea;
+      padding-top: 25%;
+      button {
+        @include set-btn-style;
+      }
+    }
+    &__right {
+      display: inline-block;
+      z-index: 100;
+      width: 70%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .particle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .home {
+    &__container {
+      width: 100%;
+      height: 100%;
+      padding: 5% 0 5% 0;
+      @include set-flex;
+      justify-content: center;
+      flex-direction: row;
+      &__left {
+        width: 40%;
+        padding-top: 0%;
+        button {
+          @include set-btn-style;
+        }
+      }
+      &__right {
+        display: inline-block;
+        width: 35%;
+      }
+    }
+  }
+}
