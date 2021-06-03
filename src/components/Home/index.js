@@ -1,7 +1,7 @@
 import React from 'react';
 import Particles from 'react-particles-js';
 import styles from './Home.module.scss';
-import landingPageQuiz from '../assets/images/landingPageQuiz.png';
+import landingPageQuiz from '../../assets/images/landingPageQuiz.png';
 
 function Home() {
   return (
